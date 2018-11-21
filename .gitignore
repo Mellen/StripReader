@@ -1,0 +1,14 @@
+.gradle
+*.class
+*.apk
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea
+.DS_Store
+/build
+/app/build
+/captures
+gradlew*
+openCVLibrary300/build/
+openCVLibrary300/
