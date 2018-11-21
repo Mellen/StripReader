@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reader">
+
+    <com.lateralimaging.stripreader.OpenCVCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/camera_view" />
+
+    <com.lateralimaging.stripreader.StripMaskView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/camera_mask"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/configure"
+        android:id="@+id/btnConfig"/>
+
+    <TextView
+        android:id="@+id/txtPWBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtPleaseWait"
+        android:rotation="90"
+        android:textSize="20pt"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Please Wait"
+        android:visibility="gone"/>
+</RelativeLayout>

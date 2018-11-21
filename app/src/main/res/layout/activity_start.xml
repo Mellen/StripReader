@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ffffff"
+    tools:context="com.lateralimaging.stripreader.Start">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:gravity="center">
+
+        <ProgressBar android:id="@+id/loading_spinner"
+            android:visibility="invisible"
+            style="?android:progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_height="0dip"
+            android:layout_width="match_parent"
+            android:layout_weight="15"
+            android:layout_marginTop="0dip"
+            android:text="@string/capture"/>
+
+        <Button
+            android:id="@+id/btnCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="15"
+            android:text="@string/check_in_with_server"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVersion"/>
+
+    </LinearLayout>
+
+</FrameLayout>
